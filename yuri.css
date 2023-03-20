@@ -1,4 +1,4 @@
-.cabeçalho {
+.cabecalho {
     background-color: black;
 }
 .divisao {
@@ -18,4 +18,8 @@ h1 {
 }
 h2 {
     font-size: 19px;
+}
+img {
+    width: 20px;
+    background-image: linear-gradient();
 }
