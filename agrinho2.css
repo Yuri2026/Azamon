@@ -1,0 +1,43 @@
+.cabecalhobasico {
+    color: blue;
+    padding: 1.5%;
+}
+.textobasico {
+    font-size: 18px;
+    padding: 1%;
+}
+.cabecalhoiniciante {
+    color: blue;
+    padding: 1.5%;
+}
+.textoiniciante {
+    font-size: 18px;
+    padding: 1%;
+}
+.cabecalhoavancado {
+    color: blue;
+    padding: 1.5%;
+}
+.textoavancado {
+    font-size: 18px;
+    padding: 1%;
+}
+.paginainicial {
+    font-size: 15px;
+}
+footer {
+    font-size: 18px;
+    color: blue;
+}
+.calamidade {
+    margin: auto;
+    background-image: linear-gradient(#383d58);
+    display: inline-block;
+    padding: 1.5%;
+}
+.segredonafloresta {
+    margin: auto;
+    background-image: linear-gradient(#383d58);
+    display: 	inline-block;
+    padding: 1%;
+}
