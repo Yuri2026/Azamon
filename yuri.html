@@ -4,181 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Basquete</title>
-    <style>
-        /* Reset de estilos */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        /* Estilos do corpo do site */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
+    <title>Alura MIDI</title>
 
-        /* Estilos do cabeçalho */
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
-        /* Estilos da barra de navegação */
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 0.5rem;
-        }
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+    <script src="main.js"></script>
 
-        nav li {
-            margin: 0 1rem;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-
-        /* Estilos das seções */
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-
-        section h2 {
-            margin-bottom: 1rem;
-        }
-
-        section p {
-            margin-bottom: 2rem;
-        }
-
-        section img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Estilos para a seção de jogadores históricos */
-        #players {
-            background-color: #f9f9f9;
-        }
-
-        #players ul {
-            text-align: left;
-            padding-left: 2rem;
-        }
-
-        #players li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Estilos para a seção de equipes */
-        #teams {
-            background-color: #f9f9f9;
-        }
-
-        /* Estilos do rodapé */
-        footer {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.8rem;
-        }
-
-        /* Estilos para tornar o site responsivo */
-        @media screen and (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav li {
-                margin: 0.5rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Meu Site de Basquete</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Página Inicial</a></li>
-            <li><a href="#about">Sobre o Basquete</a></li>
-            <li><a href="#players">Jogadores Históricos</a></li>
-            <li><a href="#teams">Equipes</a></li>
-            <li><a href="#news">Notícias</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
+    <h1>Alura Midi</h1>
 
-    <section>
-        <h2>Bem-vindo ao Meu Site de Basquete</h2>
-        <p>Aqui você encontrará informações sobre o mundo do basquete!</p>
-        <img src="https://fadeawayworld.net/.image/t_share/MTg4NzgxMDk1MzM5NTAxMDg4/a1839c3685b90797e9df11c51c4b7e64.jpg" alt="Imagem de basquete">
+    <section class="teclado">
+        <button class="tecla tecla_pom">Pom</button>
+        <button class="tecla tecla_clap">Clap</button>
+        <button class="tecla tecla_tim">Tim</button>
+
+        <button class="tecla tecla_puff">Puff</button>
+        <button class="tecla tecla_splash">Splash</button>
+        <button class="tecla tecla_toim">Toim</button>
+
+        <button class="tecla tecla_psh">Psh</button>
+        <button class="tecla tecla_tic">Tic</button>
+        <button class="tecla tecla_tom">Tom</button>
     </section>
 
-    <section id="about">
-        <h2>Sobre o Basquete</h2>
-        <p>O basquete é um esporte praticado em todo o mundo, jogado por duas equipes, cada uma com cinco jogadores em quadra. O objetivo do jogo é marcar pontos arremessando a bola em uma cesta, localizada na extremidade oposta da quadra. O basquete é conhecido por sua dinâmica rápida e emocionante, além de jogadas acrobáticas e habilidades impressionantes dos jogadores.</p>
-    </section>
+    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
-    <section id="players">
-        <h2>Jogadores Históricos</h2>
-        <p>O basquete teve muitos jogadores lendários que marcaram a história do esporte. Alguns dos mais famosos são:</p>
-        <ul>
-            <li><strong>Allen Iverson</strong> - Conhecido como "AI" ou "The Answer", Iverson foi um dos jogadores mais influentes e talentosos da história da NBA.</li>
-            <li><strong>Michael Jordan</strong> - Conhecido como "Air Jordan", ele foi um dos maiores jogadores de todos os tempos, vencendo seis títulos da NBA com o Chicago Bulls.</li>
-            <li><strong>LeBron James</strong> - Um dos jogadores mais dominantes da atualidade, com várias conquistas e títulos da NBA.</li>
-            <li><strong>Kobe Bryant</strong> - Também conhecido como "Black Mamba", Kobe foi um dos maiores jogadores da história do Los Angeles Lakers.</li>
-            <li><strong>Shaquille O'Neal</strong> - Um dos pivôs mais dominantes da história, ganhou vários títulos da NBA em sua carreira.</li>
-        </ul>
-        <img src="https://conteudo.imguol.com.br/c/esporte/59/2020/11/02/o-time-ideal-de-shaq-tem-alem-dele-mesmo-lebron-james-michael-jordan-kobe-bryant-e-allen-iverson-1604360935260_v2_450x450.png" alt="Imagem de jogadores históricos">
-    </section>
-
-    <section id="teams">
-        <h2>Equipes</h2>
-        <p>A NBA possui várias equipes, cada uma com sua história e legado. Algumas das equipes mais populares são:</p>
-        <ul>
-            <li><strong>Los Angeles Lakers</strong> - Uma das equipes mais vitoriosas da NBA, com diversos títulos conquistados ao longo dos anos.</li>
-            <li><strong>Golden State Warriors</strong> - Conhecidos por seu estilo de jogo empolgante e títulos recentes.</li>
-            <li><strong>Boston Celtics</strong> - Uma das equipes mais históricas da liga, com um legado de campeonatos.</li>
-            <li><strong>Chicago Bulls</strong> - Dominantes nos anos 90, com Michael Jordan como líder.</li>
-            <li><strong>Miami Heat</strong> - Ganharam vários campeonatos desde a entrada de LeBron James em sua equipe.</li>
-        </ul>
-        <img src="https://img.quizur.com/f/img63e54c859d3978.66412765.jpg?lastEdited=1675971722" alt="Imagem de equipes da NBA">
-    </section>
-
-    <section id="news">
-        <h2>Notícias</h2>
-        <p>Fique por dentro das últimas notícias e atualizações sobre o mundo do basquete.</p>
-        <!-- Aqui você pode adicionar uma lista de notícias recentes ou feeds de notícias relacionadas ao basquete -->
-    </section>
-
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações sobre o basquete ou para fazer sugestões para o site.</p>
-        <!-- Aqui você pode adicionar um formulário de contato ou informações de contato -->
-    </section>
-
-    <footer>
-        <p>Todos os direitos reservados &copy; 2023 Meu Site de Basquete</p>
-        <p>Este site é apenas para fins educacionais e não representa uma entidade real.</p>
-    </footer>
 </body>
 </html>
